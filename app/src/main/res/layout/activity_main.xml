@@ -7,12 +7,268 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/tv_basics"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:gravity="center"
+        android:text="基本资料"
+        android:textColor="#ff333333"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.002" />
+
+    <View
+        android:id="@+id/v_01"
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="14dp"
+        android:background="#ff333333"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_basics"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/v_02"
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="14dp"
+        android:background="#ff333333"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_basics" />
+
+    <TextView
+        android:id="@+id/tv_cancel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="#ff333333"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.029" />
+
+    <TextView
+        android:id="@+id/tv_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="保存"
+        android:textColor="#ff4F61E7"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.958"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.029" />
+
+    <TextView
+        android:id="@+id/tv_headportrait"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:drawableRight="@drawable/ic_baseline_chevron_right_24"
+        android:gravity="center|left"
+        android:text="头像"
+        android:textColor="#ff333333"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.093" />
+
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:drawableRight="@drawable/ic_baseline_chevron_right_24"
+        android:gravity="center|left"
+        android:text="用户名"
+        android:textColor="#ff333333"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_headportrait"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/v_03"
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="14dp"
+        android:background="#ff333333"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_username" />
+
+    <TextView
+        android:id="@+id/tv_gender"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:drawableRight="@drawable/ic_baseline_chevron_right_24"
+        android:gravity="center|left"
+        android:text="性别"
+        android:textColor="#ff333333"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_username"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/v_04"
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="14dp"
+        android:background="#ff333333"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_gender" />
+
+    <TextView
+        android:id="@+id/tv_birthday"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:drawableRight="@drawable/ic_baseline_chevron_right_24"
+        android:gravity="center|left"
+        android:text="出生年月"
+        android:textColor="#ff333333"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_gender"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="41dp" />
+
+    <View
+        android:id="@+id/v_05"
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="14dp"
+        android:background="#ff333333"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_birthday" />
+
+    <TextView
+        android:id="@+id/tv_profile"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:gravity="center|left"
+        android:text="个人简介"
+        android:textColor="#ff333333"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_birthday"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="33dp" />
+
+    <ImageView
+        android:id="@+id/iv_photo"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_headportrait"
+        app:layout_constraintEnd_toEndOf="@+id/tv_headportrait"
+        app:layout_constraintHorizontal_bias="0.912"
+        app:layout_constraintStart_toStartOf="@+id/tv_headportrait"
+        app:layout_constraintTop_toTopOf="@+id/tv_headportrait"
+        app:srcCompat="@drawable/yuanxing" />
+
+    <TextView
+        android:id="@+id/tv_qq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="13421585297"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_username"
+        app:layout_constraintEnd_toEndOf="@+id/tv_username"
+        app:layout_constraintHorizontal_bias="0.905"
+        app:layout_constraintStart_toStartOf="@+id/tv_username"
+        app:layout_constraintTop_toTopOf="@+id/tv_username" />
+
+    <TextView
+        android:id="@+id/tv_male"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="男"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_gender"
+        app:layout_constraintEnd_toEndOf="@+id/tv_gender"
+        app:layout_constraintHorizontal_bias="0.921"
+        app:layout_constraintStart_toStartOf="@+id/tv_gender"
+        app:layout_constraintTop_toTopOf="@+id/tv_gender" />
+
+    <TextView
+        android:id="@+id/tv_digital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2000年04月01日"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_birthday"
+        app:layout_constraintEnd_toEndOf="@+id/tv_birthday"
+        app:layout_constraintHorizontal_bias="0.895"
+        app:layout_constraintStart_toStartOf="@+id/tv_birthday"
+        app:layout_constraintTop_toTopOf="@+id/tv_birthday" />
+
+    <EditText
+        android:id="@+id/EditText"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:background="#9999"
+        android:gravity="top|left"
+        android:hint="@string/app_Edit1"
+        android:inputType="text"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.658" />
+
+    <TextView
+        android:id="@+id/tv_digital1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0/100"
+        app:layout_constraintBottom_toBottomOf="@+id/EditText"
+        app:layout_constraintEnd_toEndOf="@+id/EditText"
+        app:layout_constraintHorizontal_bias="0.994"
+        app:layout_constraintStart_toStartOf="@+id/EditText"
+        app:layout_constraintTop_toTopOf="@+id/EditText"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
